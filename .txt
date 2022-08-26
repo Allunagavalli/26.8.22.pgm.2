@@ -1,0 +1,25 @@
+#include<studio.h>
+void main()
+{
+char s[20];
+int i,j,size;
+printf("enter a string");
+gets(s);
+size=strlen(s);
+i=0;
+j=size-1;
+while(i<(size/2))
+{
+if(s[i]==s[j])
+{
+i++;
+j--;
+}
+else
+break;
+}
+if(i>=j)
+Printf("palandrom");
+else
+Printf("not palandrom");
+{
